@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.top, .bottom {
+    width: 100%;
+    height: 70px;
+    background-color: #e9e4db;
+    text-align: left;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+}
+
+.left, .right {
+    position: absolute;
+    top: 70px;
+    width: 20%;
+    background-color: #d2cabb;
+}
+
+.left {
+    left: 0;
+    height: calc(100vh - 140px);
+    flex-grow: 1;
+}
+
+.right {
+    right: 0;
+    height: 383px;
+    text-align: right;
+    padding-right: 20px;
+    top: 140px;
+    bottom: 100%;
+    flex-grow: 1;
+}
+
+.main {
+    position: relative;
+    top: 70px;
+    margin-bottom: 140px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    flex-grow: 1;
+}
+
+.sec1, .sec3 {
+    background-color: #b2a58f;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.sec3{
+    margin-right: 25%;
+}
+
+.sec2 {
+    flex-grow: 1;
+    background-color: #9e9079;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    margin-right: 25%;
+}
+
+.bottom {
+    top: calc(100vh - 70px);
+    background-color: #c0b5a2;
+    text-align: right;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    word-wrap: break-word;
+    font-size: 12px;
+    color: rgb(60, 42, 10);
+    white-space: normal;
+}
+
+h1 {
+    text-align: left;
+}
+
+h2 {
+    text-align: right;
+    width: 300px;
+}
+
+h5 {
+    text-align: left;
+    width: 300px;
+}
+
+h4 {
+    text-align: right;
+}
+
+h3 {
+    text-align: right;
+    width: 50%;
+    max-width: 100%;
+    word-wrap: break-word; 
+    margin: auto auto; 
+}
+
+h6 {
+    text-align: right;
+    width: 80%;
+    max-width: 100%;
+    word-wrap: break-word; 
+    margin: 30px auto; 
+}
